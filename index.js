@@ -1,5 +1,5 @@
-// // №1 Периметр квадрата код з варінтами
-// // const side = prompt ('enter side', 4);
+// //№1 Периметр квадрата код з варіантами
+// const side = prompt ('enter side', 4)
 // // const side = '4';
 
 // /**
@@ -7,7 +7,7 @@
 //  * @param {number} side
 //  * @returns {number} number | NaN;
 //  */
-// const getPerimetrSquare = function (side = 8) {
+// const getPerimetrSquare = function (side=9) {
 //   // const perimetr = side + side + side +side;
 //   if (side <= 0) {
 //     return NaN;
@@ -18,38 +18,54 @@
 // };
 
 // console.log(getPerimetrSquare());
+// console.log(getPerimetrSquare(1));
 // console.log(getPerimetrSquare(undefined));
 // console.log(getPerimetrSquare(3));
+// console.log(getPerimetrSquare(null));
 // console.log(getPerimetrSquare(-3));
 
-// // №2 Чи дорослий користувач неоптимізований код
-// // /**
-// //  * Is user adult
-// //  * @param {number} age
-// //  * @returns {boolen}
-// //  */
-// // const age = prompt ('enter age', 4);
-// // const isAdult = function (age) {
-// // if (age < 18) {
-// //  return false;
-// // }
-// //   return true;
-// // };
-// // console.log(isAdult());
 
-// // №3 Чи дорослий користувач оптимізований код
+// // від себе
+// function as(v = 1) {
+//   if (v>0) {
+//     return v *4;
+//   }
+//   return 
+// }
+// console.log(as())
+
+
+// // №2 Чи дорослий користувач неоптимізований код
 // /**
-//  *
-//  * @param {number} age > 0
-//  * @param {number} FULL_AGE default value = 18
-//  * @returns {boolean}
+//  * Is user adult
+//  * @param {number} age
+//  * @returns {boolen}
 //  */
-// const isAdult = function (age, FULL_AGE = 18) {
-//   return age >= FULL_AGE;
+// const age = prompt ('enter age', 4);
+// const isAdult = function (age) {
+// if (age < 18) {
+//  return false;     // ??????????
+// }
+//   return true;
 // };
+// console.log(isAdult());
+
+
+// №3 Чи дорослий користувач оптимізований код
+/**
+ *
+ * @param {number} age > 0
+ * @param {number} FULL_AGE default value = 18
+ * @returns {boolean}
+ */
+const isAd ult = function (age, FULL_AGE = 18) {
+  return age >= FULL_AGE;
+};
 // const userAge = 45;
-// console.log(isAdult(17));
-// console.log(isAdult(18));
+console.log(isAdult(17));
+console.log(isAdult(18));
+
+
 
 // // №4 якщо користувач вводить дані вивести їх, інакше null
 // /**
@@ -65,8 +81,9 @@
 // };
 // console.log(getUserInput());
 
+
 // // №5 перевірка на кратність
-// const number1 = 47;
+// const number1 = 2;
 // const number2 = 5;
 // /**
 //  *
@@ -74,7 +91,7 @@
 //  * @param {number} number2
 //  * @returns {boolen}
 //  */
-// const isMultiplicity = function (numbe1, number2) {
+// const isMultiplicity = function (number1, number2) {
 //   return number1 % number2 === 0;
 // };
 
@@ -83,6 +100,7 @@
 // } else {
 //   console.log("number must be integer");
 // }
+
 
 // // №6 перевірка на існування трикутника
 // let value1 = 1;
@@ -157,6 +175,8 @@
 // console.log(checkTwoNumbers(number1, number2));
 
 // // №8 Порівняння 2 чисел
+// const number1 = 3;
+// const number2 = 2;
 // /**
 //  *
 //  * @param {number} number1
@@ -174,35 +194,35 @@
 // };
 // console.log(compareTwoNumbers(number1, number2));
 
-// №9 Обчислити квадратне рівняння - ax2+bx+c=0
-/**
- *
- * @param {number} a
- * @param {number} b
- * @param {number} c
- * @returns {number[] | null}
- */
+// // №9 Обчислити квадратне рівняння - ax2+bx+c=0
+// /**
+//  *
+//  * @param {number} a
+//  * @param {number} b
+//  * @param {number} c
+//  * @returns {number[] | null}
+//  */
 
-const calcSquareEquation = function (a = 1, b = -26, c = 120) {
-  const D = b * b - 4 * a * c;
-  if (D < 0) {
-    return null;
-  }
-  // if (D === 0) {
-  //   return -b / (2 * a);
+// const calcSquareEquation = function (a = 1, b = -26, c = 120) {
+//   const D = b * b - 4 * a * c;
+//   if (D < 0) {
+//     return null;
+//   }
+//   // if (D === 0) {
+//   //   return -b / (2 * a);
 
-  if (D === 0) {
-    const x = -b / (2 * a);
-    return [x];
-  }
-  const x1 = (-b + Math.sqrt(D)) / (2 * a);
-  const x2 = (-b - Math.sqrt(D)) / (2 * a);
-  return [x1, x2];
-};
+//   if (D === 0) {
+//     const x = -b / (2 * a);
+//     return [x];
+//   }
+//   const x1 = (-b + Math.sqrt(D)) / (2 * a);
+//   const x2 = (-b - Math.sqrt(D)) / (2 * a);
+//   return [x1, x2];
+// };
 
-const result = calcSquareEquation();
-if (result) {
-  console.log(result);
-} else {
-  console.log("roots not found");
-}
+// const result = calcSquareEquation();
+// if (result) {
+//   console.log(result);
+// } else {
+//   console.log("roots not found");
+// }

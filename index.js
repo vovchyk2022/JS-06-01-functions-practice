@@ -51,19 +51,33 @@
 // console.log(isAdult());
 
 
-// №3 Чи дорослий користувач оптимізований код
 /**
- *
- * @param {number} age > 0
- * @param {number} FULL_AGE default value = 18
- * @returns {boolean}
+ * Is user adult
+ * @param {number} age 
+ * @returns {boolen} 
  */
-const isAd ult = function (age, FULL_AGE = 18) {
-  return age >= FULL_AGE;
-};
-// const userAge = 45;
-console.log(isAdult(17));
-console.log(isAdult(18));
+const age = prompt ('Enter your age', 4);
+const isAdult = function (age) {
+  if (age < 18) {
+    return false;
+  }
+  return true;
+}
+console.log(isAdult());
+
+// // №3 Чи дорослий користувач оптимізований код
+// /**
+//  *
+//  * @param {number} age > 0
+//  * @param {number} FULL_AGE default value = 18
+//  * @returns {boolean}
+//  */
+// const isAdult = function (age, FULL_AGE = 18) {
+//   return age >= FULL_AGE;
+// };
+// // const userAge = 45;
+// console.log(isAdult(17));
+// console.log(isAdult(18));
 
 
 

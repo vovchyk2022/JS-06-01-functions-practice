@@ -299,140 +299,105 @@ NaN
 // if (checkUserInput1 || checkUserInput2) {
 //   console.log("error! value must be number!");
 // }
+// _________________________________________________________________
 
 
+// // Jan 7, 2023
+// //функція додає два числа, які вводить користувач і логує суму
 
-// Jan 7, 2023
-//функція додає два числа, які вводить користувач і логує суму
-
-/**
- * Get summa two number
- * @param {number} number1
- * @param {number} number2
- * @returns {number}
- */
- function getSumTwoNumbers(number1, number2) {
-    return number1 + number2;
-  }
-  
-  /**
-   *
-   * @param {any} value
-   * @returns {boolean}
-   */
-   function checkNumber(value) {
-      const checkValue =
-        value === "" || value === null || Number.isNaN(Number(value));
-      return !checkValue;
-    }
-  
-  // console.log(getSumTwoNumbers(2,3));
-  // console.log(getSumTwoNumbers(Number(userInput1), (Number(userInput1))));
-
-const userInput1 = prompt("Enter number: ", 6);
-const userInput2 = prompt("Enter number: ", 3);
-
-//debugger;
-
-if (checkNumber(userInput1) && checkNumber(userInput2)) {
-  console.log(getSumTwoNumbers(Number(userInput1), Number(userInput2)));
-} else {
-  console.log("error! value must be number!");
-}
-_______________________________________________________________
-
-// //const side = '4';
 // /**
 //  * Get summa two number
 //  * @param {number} number1
 //  * @param {number} number2
 //  * @returns {number}
-//  * Get perimetr square
-//  * @param {number} side 
-//  * @returns {number} number | NaN 
 //  */
+
 // function getSumTwoNumbers(number1=1, number2=2) {
 //   return number1 + number2;
 // }
+  
+//   /**
+//    *
+//    * @param {any} value
+//    * @returns {boolean}
+//    */
+//    function checkNumber(value) {
+//       const checkValue =
+//         value === "" || value === null || Number.isNaN(Number(value));
+//       return !checkValue;
+//     }
+  
+// //   console.log(getSumTwoNumbers(2,3));
+//   // console.log(getSumTwoNumbers(Number(userInput1), (Number(userInput1))));
+
+// const userInput1 = prompt("Enter number: ", 6);
+// const userInput2 = prompt("Enter number: ", 3);
+
+// //debugger;
+
+// if (checkNumber(userInput1) && checkNumber(userInput2)) {
+//   console.log(getSumTwoNumbers(Number(userInput1), Number(userInput2)));
+// //   if (checkNumber(userInput1) && checkNumber(userInput2)) {
+// //     console.log(getSumTwoNumbers(userInput1, userInput2)); // ф-я працює як склеювання (конкатенація);
+// } else {
+//   console.log("error! value must be number!");
+// }
+
 // console.log(getSumTwoNumbers())
 // console.log(getSumTwoNumbers(100))
 // console.log(getSumTwoNumbers(undefined, 100))
+// _______________________________________________________________
+
 
  
-// Add getPerimetrSquare
-// /**
-//  *
-//  * @param {any} value
-//  * @returns {boolean}
-//  */
-// function checkNumber(value) {
-//   const checkValue =
-//     value === "" || value === null || Number.isNaN(Number(value));
-//   return !checkValue;
-// }
+// // Add getPerimetrSquare
 
+// const side = 4;
 // /**
-//  *
-//  * @param {any} value1
-//  * @param {any} value2
-//  * @returns {any | null}
+//  * Get perimetr square
+//  * @param {number} side 
+//  * @returns {number} number | NaN
 //  */
-// function getMaxValue(value1, value2) {
-//   if (typeof value1 === typeof value2) {
-//     if (value1 > value2) {
-//       return value1;
-//     }
-//     return value2;
+
+// // 1 варіант if без else
 // const getPerimetrSquare = function (side = 1) { 
 //   if(side<=0){
 //     return NaN;
 //   }
-//   return null;
-// }
-// console.log(getMaxValue("s", "h"));
-// console.log(getMaxValue("cat", "dog"));
-// console.log(getMaxValue("s", 5));
-// console.log(getMaxValue(40, 5));
-// console.log(getMaxValue(40, true));
-//   return side * 4;
+// return side * 4;
 // };
-// //debugger
+
+// // 2 варіант if + else
+// const getPerimetrSquare = function (side = 1) { 
+//   if (side<=0) {
+//     return NaN;
+//   } else {
+//     return side * 4;
+//   }
+// };
+
+
+// // debugger
 // console.log(getPerimetrSquare()); 
 // console.log(getPerimetrSquare(undefined));
-// //debugger
 // console.log(getPerimetrSquare(3));
 // console.log(getPerimetrSquare(-3));
 
 
 // // Add isAdult
-// //const side = '4';
+
 // //написати функцію, яка приймає число (коректне),
 // //яке є віком користувача і повертає
 // //результат перевірки на повноліття
 
 // /**
-//  * Get perimetr square
-//  * @param {number} side 
-//  * @returns {number} number | NaN 
-//  * 
 //  * @param {number} age >0
 //  * @param {number} FULL_AGE default value = 18
 //  * @returns {boolean}
 //  */
-//  const getPerimetrSquare = function (side = 1) { 
-//     if(side<=0){
-//       return NaN;
-//     }
-//     return side * 4;
 //   const isAdult = function (age, FULL_AGE = 18) {
-//     return age >= FULL_AGE;
+//   return age >= FULL_AGE;
 //   };
-//   //debugger
-//   console.log(getPerimetrSquare()); 
-//   console.log(getPerimetrSquare(undefined));
-//   //debugger
-//   console.log(getPerimetrSquare(3));
-//   console.log(getPerimetrSquare(-3));
   
   
 //   const userAge = 45;
@@ -442,22 +407,15 @@ _______________________________________________________________
 
 
 //   // Add getUserInput
-//   //написати функцію, яка приймає число (коректне),
-// //яке є віком користувача і повертає
-// //результат перевірки на повноліття
 // //напишіть функцію, яка буде запитувати у користувача будь що
 // //і повертати значення, якщо воно було введено
 // //або повертати null, якщо користувач нічого не ввів
 
+// // 1 варіант Expression
 // /**
 //  * 
-//  * @param {number} age >0
-//  * @param {number} FULL_AGE default value = 18
-//  * @returns {boolean}
 //  * @returns {string | null}
 //  */
-// const isAdult = function (age, FULL_AGE = 18) {
-//     return age >= FULL_AGE;
 //   const getUserInput = function () {
 //     const input = prompt();
 //     if(input){
@@ -465,99 +423,61 @@ _______________________________________________________________
 //     }
 //     return null;
 //   };
-  
-//   const userAge = 45;
-//   //debugger;
-//   console.log(isAdult(userAge)); //true
-//   console.log(isAdult(17)); //false
+//   console.log(getUserInput());
 
-//   // Add getUserInput
-//   //написати функцію, яка приймає число (коректне),
-// //яке є віком користувача і повертає
-// //результат перевірки на повноліття
-// //напишіть функцію, яка буде запитувати у користувача будь що
-// //і повертати значення, якщо воно було введено
-// //або повертати null, якщо користувач нічого не ввів
-
+// // 2 варіант Declaration
 // /**
 //  * 
-//  * @param {number} age >0
-//  * @param {number} FULL_AGE default value = 18
-//  * @returns {boolean}
 //  * @returns {string | null}
 //  */
-// const isAdult = function (age, FULL_AGE = 18) {
-//     return age >= FULL_AGE;
-//   const getUserInput = function () {
+//  function getUserInput () {
 //     const input = prompt();
 //     if(input){
 //       return input;
 //     }
 //     return null;
 //   };
-  
-//   const userAge = 45;
-//   //debugger;
-//   console.log(isAdult(userAge)); //true
-//   console.log(isAdult(17)); //false
+//   console.log(getUserInput());
 
+//  //debugger;
+  
 
 // // Add isMultiplicity
-//   //напишіть функцію, яка буде запитувати у користувача будь що
-// //і повертати значення, якщо воно було введено
-// //або повертати null, якщо користувач нічого не ввів
 // //напишіть функцію, яка приймає два числа (корректні)
 // //і повертає кратність першого другим
 
-// const number1 = 45;
+
+// const number1 = 45.1;
 // const number2 = 9;
+
 // /**
 //  * 
-//  * @returns {string | null}
-//  *
-//  * @param {number} number1
-//  * @param {number} number2
-//  * @returns {boolean}
+//  * @param {number} number1 
+//  * @param {number} number2 
+//  * @returns 
 //  */
-// const getUserInput = function () {
-//   const input = prompt();
-//   if(input){
-//     return input;
-//   }
-//   return null;
 // const isMultiplicity = function (number1, number2) {
 //   return number1 % number2 === 0;
-// };
-
-// if (Number.isInteger(number1) && Number.isInteger(number2)) {
-//   console.log(isMultiplicity(number1, number2));
-// } else {
-//   console.log("number must be integer");
 // }
+// if (Number.isInteger(number1) && Number.isInteger(number2)) {
+//     console.log(isMultiplicity(number1, number2));
+//   } else {
+//     console.log("number must be integer");
+//   }
+//   console.log(isMultiplicity(12,3));
+  
 
-
-// // Add isMultiplicity
-// //напишіть функцію, яка приймає два числа (корректні)
-// //і повертає кратність першого другим
-// //напишіть функцію, яка приймає три числа
-// //і перевіряє чи можуть бути ці числа мірами довжини
-// //трьох сторін трикутника
-
-// const number1 = 45;
-// const number2 = 9;
-// /**
-//  *
-//  * @param {number} number1
-//  * @param {number} number2
-//  * 
+// // Add isTriangleExist
+// // //напишіть функцію, яка приймає три числа
+// // //і перевіряє чи можуть бути ці числа мірами довжини
+// // //трьох сторін трикутника
+//   /**
 //  * @param {number} value1 
 //  * @param {number} value2 
 //  * @param {number} value3 
 //  * @returns {boolean}
 //  */
-// const isMultiplicity = function (number1, number2) {
-//   return number1 % number2 === 0;
-// const isTriangleExist = function (value1, value2, value3) {
+// const isTriangleExist = function (value1=1, value2=1, value3=1) {
 //   return (
 //     value1 > 0 &&
 //     value2 > 0 &&
@@ -567,43 +487,9 @@ _______________________________________________________________
 //     value3 + value2 > value1
 //   );
 // };
+// console.log(isTriangleExist()); // true
 
-// if (Number.isInteger(number1) && Number.isInteger(number2)) {
-//   console.log(isMultiplicity(number1, number2));
-// } else {
-//   console.log("number must be integer");
-// }
-
-
-// // Add getResult
-// //напишіть функцію, яка приймає три числа
-// //і перевіряє чи можуть бути ці числа мірами довжини
-// //трьох сторін трикутника
-// //напишіть функцію, яка приймає два числа
-// //якщо числа парні - повертає суму
-// //якщо непарні - повертає результат множення
-// //якщо різні - повертає непарне
-
-// /**
-//  * 
-//  * @param {number} value1 
-//  * @param {number} value2 
-//  * @param {number} value3 
-//  * @returns {boolean}
-//  *
-//  * @param {number} number1
-//  * @param {number} number2
-//  * @returns {number}
-//  */
-//  const isTriangleExist = function (value1, value2, value3) {
-//     return (
-//       value1 > 0 &&
-//       value2 > 0 &&
-//       value3 > 0 &&
-//       value1 + value2 > value3 &&
-//       value1 + value3 > value2 &&
-//       value3 + value2 > value1
-//     );
+// Задача - написати ф-ю, яка приймає два числа і: 
 //   const getResult = function (number1, number2) {
 //     //якщо числа парні - повертає суму
 //     if (number1 % 2 === 0 && number2 % 2 === 0) {
@@ -619,7 +505,7 @@ _______________________________________________________________
 //     }
 //     return number2;
 //   };
-  
+//   // Варіант 2  
 //   // const number1 = 5;
 //   // const number2 = 3;
 //   // let result;
@@ -636,10 +522,6 @@ _______________________________________________________________
 
   
 //   // Add compareTwoNumbers
-//   //напишіть функцію, яка приймає два числа
-// //якщо числа парні - повертає суму
-// //якщо непарні - повертає результат множення
-// //якщо різні - повертає непарне
 // //і порівнює ці числа так:
 // //якщо перше більше другого - повертає 1
 // //якщо друге більше першого - повертає -1
@@ -651,93 +533,59 @@ _______________________________________________________________
 //  * @param {number} number2
 //  * @returns {number}
 //  */
-// const getResult = function (number1, number2) {
-//     //якщо числа парні - повертає суму
-//     if (number1 % 2 === 0 && number2 % 2 === 0) {
-//       return number1 + number2;
-//     }
-//     //якщо непарні - повертає результат множення
-//     if (number1 % 2 && number2 % 2) {
-//       return number1 * number2;
-//   // const compareTwoNumbers = function (number1, number2) {
-//   //   if (number1 > number2) {
-//   //     return 1;
-//   //   }
-//   //   if (number1 < number2) {
-//   //     return -1;
-//   //   }
-//   //   return 0;
-//   // };
-  
+
 //   const compareTwoNumbers = function (number1, number2) {
-//     if (number1 === number2) {
-//       return 0;
-//     }
-//     //якщо різні - повертає непарне
-//     if (number1 % 2) {
-//       return number1;
 //     if (number1 > number2) {
 //       return 1;
 //     }
-//     return number2;
-//     return -1;
+//     if (number1 < number2) {
+//       return -1;
+//     }
+//     return 0; 
 //   };
-  
-//   // const number1 = 5;
-//   // const number2 = 3;
-//   // let result;
-//   // //debugger
-//   // if (number1 % 2 === 0 && number2 % 2 === 0) {
-//   //   result = number1 + number2;
-//   // } else if (number1 % 2 && number2 % 2) {
-//   //   result = number1 * number2;
-//   // } else if (number1 % 2) {
-//   //   result = number1;
-//   // }else{
-//   //   result = number2;
-//   // }
+// console.log(compareTwoNumbers(4,8));
+
+
+//напишіть функцію, яка приймає два числа:
+//якщо числа парні - повертає суму
+//якщо непарні - повертає результат множення
+//якщо різні - повертає непарне
+//   const number1 = 5;
+//   const number2 = 3;
+//   let result;
+//   //debugger
+//   if (number1 % 2 === 0 && number2 % 2 === 0) {
+//     result = number1 + number2;
+//   } else if (number1 % 2 && number2 % 2) {
+//     result = number1 * number2;
+//   } else if (number1 % 2) {
+//     result = number1;
+//   }else{
+//     result = number2;
+//   }
+// console.log(result);
 
 
 //   // Add calculateSquareEquation
-//   //напишіть функцію, яка приймає два числа
-// //і порівнює ці числа так:
-// //якщо перше більше другого - повертає 1
-// //якщо друге більше першого - повертає -1
-// //якщо числа однакові - повертає 0
 // //напишіть функцію, яка обчислює квадратне рівняння
 
-// // const compareTwoNumbers = function (number1, number2) {
-// //   if (number1 > number2) {
-// //     return 1;
-// //   }
-// //   if (number1 < number2) {
-// //     return -1;
-// //   }
-// //   return 0;
-// // };
-
-// const compareTwoNumbers = function (number1, number2) {
-//     if (number1 === number2) {
-//       return 0;
-//   /**
+//    /**
 //    *
 //    * @param {number} a
 //    * @param {number} b
 //    * @param {number} c
 //    * @returns {number[] | null}
 //    */
+
 //   const calculateSquareEquation = function (a = 1, b = -26, c = 120) {
 //     const D = b * b - 4 * a * c;
 //     if (D < 0) {
 //       return null;
 //     }
-//     if (number1 > number2) {
-//       return 1;
 //     if (D === 0) {
 //       const x = -b / (2 * a);
 //       return [x];
 //     }
-//     return -1;
 //     const x1 = (-b + Math.sqrt(D)) / (2 * a);
 //     const x2 = (-b - Math.sqrt(D)) / (2 * a);
 //     return [x1, x2];
@@ -748,4 +596,5 @@ _______________________________________________________________
 //     console.log(result)
 //   }else{
 //     console.log('roots not found')
-//   }
+// }
+// console.log(calculateSquareEquation());
